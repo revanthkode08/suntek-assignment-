@@ -1,0 +1,74 @@
+
+###
+GET http://localhost:3000/user-api/users
+###create user
+
+
+### read user by objectid 
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    
+    
+}
+### 
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"sath",
+    "password":"sathwik",
+    "age":"22"
+}
+
+###
+PUT http://localhost:3000/user-api/users/697dbf7574a97c97840a713a
+Content-Type: application/json
+
+{
+    "username":"revanth",
+    "password":"ravnth",
+    "age":21
+
+}
+
+
+###
+GET http://localhost:3000/product-api/products
+###
+POST http://localhost:3000/product-api/products
+Content-Type:application/json   
+
+{
+    "productname":"laptop",
+    "brand":"hp",
+    "price":70000
+}
+###
+PUT http://localhost:3000/product-api/products/697dd09bee6999c3c2fc3076
+Content-Type:application/json
+
+{
+    "productname":"mobile",
+    "brand":"oppo",
+    "price":15000
+}
+###
+GET http://localhost:3000/product-api/products/697dd080ee6999c3c2fc3074
+
+
+
+
+### USer authentication (Login) req
+
+
+POST http://localhost:3000/user-api/auth
+Content-Type: application/json
+
+{
+     "username":"sath",
+        "password":"sathwik"
+    }
+###  
+GET http://localhost:3000/user-api/test
