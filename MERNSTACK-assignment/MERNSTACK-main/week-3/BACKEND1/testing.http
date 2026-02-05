@@ -1,0 +1,45 @@
+GET http://localhost:3000/users/
+ //only post and put are having inbuilt body
+ //url also having parameters
+ //create a user first 
+
+
+ 
+###
+ POST http://localhost:3000/users
+    Content-Type: application/json
+    
+    {
+    "name": "John Doe",
+    "email": "john@gmail.com"
+    }
+
+###
+GET http://127.0.0.1:3000/products
+###
+POST http://127.0.0.1:3000/products
+      Content-Type: application/json
+   
+      {
+       "productid":"1",
+       "name":"dove",
+       "price":200,
+       "brand":"xyz"
+      }
+###
+PUT http://127.0.0.1:3000/products/1
+ 
+    Content-Type: application/json
+
+    {
+      "productid":"1",
+      "name":"dove soap",
+      "price":250,
+      "brand":"xyz"
+    }
+    ###
+DELETE http://127.0.0.1:3000/products/2
+
+
+###
+GET http://127.0.0.1:3000/productroute-appis/products/1

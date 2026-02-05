@@ -1,0 +1,20 @@
+what database server
+it is software that uses a standard method of cataloging, retrieving, and running queries on data.
+Examples of database servers include MySQL, PostgreSQL, Microsoft SQL Server, and Oracle Database.
+relational database it not suitable for modern databases
+### create database
+use db-name
+### read databases
+show database
+### create collection
+db.createcollection(collection-name)
+comparision query operators
+operator
+$eq
+$neq
+$gt
+$gte
+$it
+$ite
+$in
+$nin

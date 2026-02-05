@@ -1,0 +1,8 @@
+ step to create backend
+ first we needt to import the packages
+ rest api
+ each request handling there is a route in api
+ end point contain base url + route
+ base url = http://localhost:3000/api/v
+ rules need to follow while creating rest api
+
