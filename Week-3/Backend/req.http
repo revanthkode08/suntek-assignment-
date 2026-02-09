@@ -1,0 +1,65 @@
+GET http://127.0.0.1:4000/user-api/users
+
+###
+POST http://127.0.0.1:4000/user-api/users
+Content-Type: application/json
+
+{
+    "id":100,
+    "name":"kishore",
+    "age":19
+}
+
+###
+PUT  http://127.0.0.1:4000/user-api/users
+Content-Type: application/json
+
+{
+    "id":100,
+    "name":"chethan kishore",
+    "age":20
+}
+
+###
+GET http://localhost:4000/user-api/users/user-id/100
+
+
+###
+DELETE http://localhost:4000/user-api/users/100
+
+###
+GET http://127.0.0.1:4000/product-api/products
+
+###
+POST http://127.0.0.1:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productId":101,
+    "name":"laptop",
+    "price":14000,
+    "brand":"Asus"
+
+}
+
+###
+PUT http://127.0.0.1:4000/product-api/products/101
+Content-Type: application/json
+
+{
+    "productId":101,
+    "name":"laptop",
+    "price":15000,
+    "brand":"Asus"
+
+}
+
+
+###
+DELETE http://127.0.0.1:4000/product-api/products/101
+
+###
+GET http://127.0.0.1:4000/product-api/products/product-id/101
+
+###
+GET http://127.0.0.1:4000/product-api/products/product-brand/Asus

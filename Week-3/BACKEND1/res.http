@@ -1,0 +1,71 @@
+### Read all users
+GET http://localhost:4000/user-api/users
+
+###read user by objectId
+GET http://localhost:4000/user-api/users/697dbadb84eaf44e27413f19
+
+### 
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"bhanu",
+    "password":"bhanu",
+    "age":18
+    
+}
+
+
+###
+PUT http://localhost:4000/user-api/users/697dbadb84eaf44e27413f19
+Content-Type: application/json
+
+{
+    "username":"chethan123",
+    "password":"chethan123",
+    "age":22
+}   
+
+###
+DELETE http://localhost:4000/user-api/users/697dbf3b4370411c5ba849ed
+
+###
+POST http://localhost:4000/user-api/auth
+Content-Type: application/json
+
+{
+    "username":"bhanu",
+    "password":"bhanu"
+}
+
+###
+GET http://localhost:4000/product-api/products
+
+###
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "ProductName":"laptop",
+    "price":50000,
+    "pid":101
+}
+
+### Req for protected route
+GET http://localhost:4000/user-api/test
+
+###update product  by id
+PUT http://localhost:4000/product-api/products/697dd525e1dcdeee88bc1aa1
+Content-Type: application/json
+
+{
+    "pid":123,
+    "ProductName":"book",
+    "price":200
+}
+
+
+###  get produxt by id
+GET http://localhost:4000/product-api/products/697dd525e1dcdeee88bc1aa1
+
+
