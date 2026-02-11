@@ -1,0 +1,130 @@
+### user register
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",  
+    "email": "revanthkode08@gmail.com",
+    "password": "chethan1234",
+    "profileImageUrl": "http://example.com/profile.jpg"
+}
+
+### Author login
+POST http://localhost:4000/author-api/users
+Content-Type: application/json
+
+{
+    "firstName": "ramarao",
+    "lastName": "kode",
+    "email": "revanthkode48@gmail.com",
+    "password": "shannu123",
+    "profileImageUrl": "http://example.com/revanth.jpg"
+}
+
+
+###
+POST http://localhost:4000/common-api/login
+Content-Type: application/json
+
+{
+    "email": "revanthkode08@gmail.com",
+    "password": "chethan1234"
+    
+}
+
+###
+POST http://localhost:4000/common-api/login
+Content-Type: application/json
+
+{
+    "email": "shannu@example.com",
+    "password": "shannu123"
+    
+}
+
+###create article
+POST http://localhost:4000/author-api/articles
+Content-Type: application/json
+
+{
+    "author":"69896c44ccd2a43f365b6def",
+    "title":"test2 article",
+    "category":"programming",
+    "content":"content of test2 article"
+}
+
+
+### read articles    
+GET http://localhost:4000/author-api/articles/69896c44ccd2a43f365b6def
+
+
+###update article
+PUT http://localhost:4000/author-api/articles
+Content-Type: application/json
+
+{
+    "author":"69896c44ccd2a43f365b6def",
+    "articleId":"698981e75ae25cf2b8e0a0d9",
+    "title":"javascrpit article ",
+    "category":"programming",
+    "content":"content of test2 article"
+}
+
+###
+PUT http://localhost:4000/author-api/articles/delete
+Content-Type: application/json
+
+{
+    "author":"69896c44ccd2a43f365b6def",
+    "articleId":"698981e75ae25cf2b8e0a0d9"
+   
+}
+
+
+###LOGOUT
+GET  http://localhost:4000/common-api/Logout
+
+
+###read all articles by users
+GET http://localhost:4000/user-api/articles
+
+###add comment to article
+POST http://localhost:4000/user-api/articles/6989b213c164fc828faf3e9d/comment
+Content-Type: application/json      
+
+{
+    "comment":"this is a comment"
+}
+
+
+###TEST RES
+GET http://localhost:4000/test
+
+
+###admin Login
+POST http://localhost:4000/admin-api/login
+Content-Type: application/json 
+
+{
+    "email":"admin@gmail.com",
+    "password":"admin123"
+}
+
+###admin block user
+PUT http://localhost:4000/admin-api/block-user/69896bdeccd2a43f365b6de9
+
+
+###admin unblocked user
+PUT http://localhost:4000/admin-api/unblock-user/69896bdeccd2a43f365b6de9
+
+
+###change password
+PUT http://localhost:4000/common-api/change-password
+Content-Type: application/json 
+
+{
+    "email":"revanthkode08@gmail.com",
+    "currentPassword":"chethan1234",
+    "newPassword":"newpassword123"
+}
