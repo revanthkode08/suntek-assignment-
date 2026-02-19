@@ -1,0 +1,65 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Layout */
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+/* Left Section */
+.left {
+    text-align: center;
+}
+
+.popular-box {
+    background-color: #4b72b8;
+    color: white;
+    padding: 20px;
+    width: 220px;
+}
+
+.popular-box ul {
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Right Section */
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* City Cards */
+.city-card {
+    background-color: #4b72b8;
+    color: white;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+}
+
+/* Image Boxes */
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.img-box {
+    width: 80px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 14px;
+}
+

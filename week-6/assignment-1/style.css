@@ -1,0 +1,61 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+nav{
+   background-color: rgb(189, 191, 193);
+   padding:20px;
+ }
+ nav h1{
+    padding-top:30px;
+    color:rgb(32, 31, 31)
+    
+ }
+ nav p{
+    padding:10px;
+    color:rgb(36, 36, 36);
+ }
+ nav a{
+    background-color: rgb(53, 85, 243);
+    color:whitesmoke;
+    margin:10px;
+    padding:2px;
+    text-decoration: none;
+    border-radius:5px;
+ }
+ .row{
+    display: flex;
+    justify-content: center;
+    margin:40px 0;
+    gap:40px;
+    
+ }
+ 
+ .card{
+   width:250px;
+   padding:20px;
+   text-align: left;
+   box-shadow: 0px 0px 8px gray;
+   border-radius: 5px;
+   background-color:white;
+ }
+ .card a{
+   text-decoration: none;
+   background-color: grey;
+   margin-top:10px;
+   padding-bottom:10px;
+   border-radius: 5px;
+   color:white;
+ }
+ .card p{
+   padding:10px;
+ }
+ .container{
+   color:rgb(29, 28, 28);
+   padding-top:20px 0;
+   margin-top:40px;
+   border-top:1px solid #ccc;
+ }
