@@ -1,0 +1,36 @@
+###
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "name":"shannu",
+    "email":"shann11e@gmail.com",
+    "password":"shannu123",
+    "cart":[]
+}
+
+###get all users
+GET http://localhost:4000/user-api/users
+
+###
+GET http://localhost:4000/product-api/products
+
+###
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productName":"HEADSET",
+    "price":50000,
+    "brand":"SONY"
+}
+
+###
+PUT http://localhost:4000/user-api/user-cart/user-id/6981862a1d482799f4caae61/product-id/698178d7271781f44b7d6b1f
+
+
+
+###
+GET http://localhost:4000/user-api/users/6981862a1d482799f4caae61
+
+###

@@ -1,0 +1,126 @@
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* HERO */
+.hero{
+    height:500px;
+    background:url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee") no-repeat center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.4);
+    padding:40px;
+}
+
+.overlay h1{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.overlay button{
+    padding:10px 25px;
+    background:orange;
+    border:none;
+    color:white;
+    cursor:pointer;
+}
+
+/* ACTIVITY SECTION */
+.activity{
+    display:flex;
+    justify-content:space-between;
+    padding:80px 100px;
+    background:#f4f4f4;
+}
+
+.activity .left{
+    width:40%;
+}
+
+.activity h2{
+    color:#1f4e8c;
+    margin-bottom:20px;
+}
+
+.activity .right{
+    width:50%;
+}
+
+.activity img{
+    width:100%;
+}
+
+/* TOURISM */
+.tourism{
+    padding:80px 100px;
+}
+
+.tourism h2{
+    color:#1f4e8c;
+    margin-bottom:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
+}
+
+.card{
+    background:#eee;
+    padding:40px;
+    text-align:center;
+}
+
+.card img{
+    width:60px;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:orange;
+    font-weight:bold;
+}
+
+/* CHOOSE SECTION */
+.choose{
+    padding:80px 100px;
+    text-align:center;
+}
+
+.choose h2{
+    color:#1f4e8c;
+    margin-bottom:30px;
+}
+
+.tabs{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-bottom:10px;
+}
+
+.tabs span{
+    cursor:pointer;
+}
+
+.tabs .active{
+    color:#1f4e8c;
+    border-bottom:3px solid orange;
+    padding-bottom:5px;
+}
+
+.line{
+    width:100%;
+    height:1px;
+    background:#ccc;
+}
